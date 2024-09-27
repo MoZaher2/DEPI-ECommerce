@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/SignUp.css">
+    <title>SignUp</title>
+</head>
+
+<body>
+       <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+        CLICON
+      </a>
+          <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+          <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="./MyFav.html">Fav</a>
+            <a href="#">My Account</a>
+            <a href="#">Contact Us</a>
+        </div>
+      </header>
+    <div class="container mt-3">
+        <div class="row justify-content-center">
+            <div class="col-xs-12 col-md-8">
+                <h2 class="text-center mb-4" style="color: #007bff;">
+                    Sign Up
+                </h2>
+
+                <form id="signupForm" class="p-4 border rounded">
+                    <div class="row mb-2">
+                        <div class="col">
+                            <label for="firstName" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="firstName" name="first_name" placeholder="الاسم الشخصى" required>
+                        </div>
+                        <div class="col">
+                            <label for="lastName" class="form-label">Family Name</label>
+                            <input type="text" class="form-control" id="lastName" name="last_name" placeholder="اسم العائله" required>
+                        </div>
+                    </div>
+
+                    <div class="mb-2">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="ادخل البريد الإلكتروني" required>
+                        <div class="invalid-feedback">ادخل الايميل بشكل صحيح</div>
+                    </div>
+
+                    <div class="mb-2">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="ادخل كلمة المرور" required minlength="8">
+                        <div class="invalid-feedback">كلمه المرور لا تقل عن 8 احرف</div>
+                    </div>
+
+                    <div class="mb-2">
+                        <label for="avatar" class="form-label">Avatar</label>
+                        <input type="file" class="form-control" id="avatar" name="avatar" accept="image/*">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100 mt-2" id="submitBtn">
+                        <span id="btnText">Sign Up</span>
+                        <div class="spinner-border spinner-border-sm text-light d-none" id="loader" role="status">
+                            
+                        </div>
+                    </button>
+                </form>
+
+                <div class="text-center mt-2">
+                    <a href="./LogIn.html">Already have an account? Log in here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+     <footer>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: support@example.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 E-Commerce St, Business City, Country</p>
+          </div>
+          <div class="footer-section">
+            <h3>About Us</h3>
+            <p>
+              We are a leading e-commerce platform offering a wide range of products
+              and exceptional customer service. Shop with us for the best deals and
+              fast delivery.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="./MyFav.html">Fav</a></li>
+              <li><a href="#">My Account</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+              <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+              <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+              <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 E-Commerce Project. All rights reserved.</p>
+        </div>
+      </footer>
+    
+
+
+
+
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/SignUp.js"></script>
+</body>
+
+</html>

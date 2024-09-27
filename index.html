@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CLICON</title>
+  <link rel="stylesheet" href="./css/Home.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+       <a href="Home.html" class="logo"> CLICON</a>
+      <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="./pages/MyFav.html">Fav</a>
+        <a href="./pages/LogIn.html">My Account</a>
+        <a href="#">Contact Us</a>
+        <a href="./pages/MyCart.html" class="shoppoing">
+          <i class="fa-solid fa-cart-shopping cart-icon"></i>
+          <span class="quantity">0</span>
+        </a>
+      </div>
+    </div>
+
+
+  </header>
+  <div class="container">
+    <!-- Sidebar Section -->
+
+    <div class="category">
+      <div class="category-options">
+        <h3>Category</h3>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="category" id="Electronics" value="Electronics">
+          <label class="form-check-label" for="Electronics">
+            Electronics
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="category" id="Sports" value="Sports">
+          <label class="form-check-label" for="Sports">
+            Sports
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="category" id="Games" value="Games">
+          <label class="form-check-label" for="Games">
+            Games
+          </label>
+        </div>
+        <!-- Add more categories as needed -->
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="category" id="Furniture" value="Furniture">
+          <label class="form-check-label" for="Furniture">
+            Furniture
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="category" id="Accessories" value="Accessories">
+          <label class="form-check-label" for="Accessories">
+            Accessories
+          </label>
+        </div>
+      </div>
+
+      <div class="filter-header">
+        <label>Sort by:</label>
+        <select id="sort-options">
+          <option value="most-popular">Most Popular</option>
+          <option value="high-to-low">Price: High to Low</option>
+          <option value="low-to-high">Price: Low to High</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="loaderCont" class="hide-loader">
+      <div class="loader"></div>
+    </div>
+    <div class="list"></div>
+
+  </div>
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: support@example.com</p>
+        <p>Phone: +123 456 7890</p>
+        <p>Address: 123 E-Commerce St, Business City, Country</p>
+      </div>
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>
+          We are a leading e-commerce platform offering a wide range of products
+          and exceptional customer service. Shop with us for the best deals and
+          fast delivery.
+        </p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="./MyFav.html">Fav</a></li>
+          <li><a href="./pages/LogIn.html">My Account</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+          <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+          <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+          <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 E-Commerce Project. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector(".nav-links");
+      navLinks.classList.toggle("active");
+    }
+  </script>
+  <script src="./js/Home.js"></script>
+</body>
+
+</html>
